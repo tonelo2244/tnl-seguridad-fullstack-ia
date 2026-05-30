@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+.dashboard-page {
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-header {
+  background: linear-gradient(to right, #7a0000, #c40000, #7a0000);
+  color: white;
+  padding: 24px;
+  text-align: center;
+}
+
+.dashboard-header h1 {
+  margin: 0 0 8px;
+  font-size: 36px;
+}
+
+.dashboard-header p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.dashboard-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.dashboard-card {
+  width: 100%;
+  max-width: 500px;
+  background-color: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+.dashboard-card h2 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: #222;
+}
+
+.dashboard-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.dashboard-buttons button {
+  min-width: 180px;
+  height: 44px;
+  border: none;
+  border-radius: 8px;
+  background-color: #c40000;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.dashboard-buttons button:hover {
+  background-color: #970000;
+}
+
+.reloj-widget {
+  width: 100%;
+  max-width: 500px;
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  transition: border 0.3s;
+}
+
+.reloj-seccion-hora {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 28px 32px 20px;
+  gap: 6px;
+}
+
+.reloj-hora {
+  font-size: 48px;
+  font-weight: bold;
+  color: #c40000;
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.reloj-fecha {
+  font-size: 15px;
+  color: #555;
+  margin: 0;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.reloj-divisor {
+  height: 1px;
+  background: #e0e0e0;
+  margin: 0 24px;
+}
+
+.reloj-seccion-tiempo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 20px 32px 28px;
+}
+
+.tiempo-icono {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.tiempo-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.tiempo-temp {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #222;
+  line-height: 1;
+}
+
+.tiempo-desc {
+  font-size: 1rem;
+  color: #666;
+  font-weight: 600;
+}
+
+.reloj-cargando {
+  font-size: 0.95rem;
+  color: #888;
+  font-style: italic;
+}
+
+.tiempo-frio    { border-top: 5px solid #3498db; }
+.tiempo-fresco  { border-top: 5px solid #5dade2; }
+.tiempo-templado { border-top: 5px solid #2ecc71; }
+.tiempo-calor   { border-top: 5px solid #e74c3c; }

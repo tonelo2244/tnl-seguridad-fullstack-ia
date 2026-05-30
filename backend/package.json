@@ -1,0 +1,23 @@
+{
+  "name": "tnl-seguridad-backend",
+  "version": "1.0.0",
+  "description": "Backend del proyecto TNL Seguridad",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "subir-convenio": "node src/scripts/subirConvenio.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.1",
+    "openai": "^6.34.0",
+    "pg": "^8.20.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

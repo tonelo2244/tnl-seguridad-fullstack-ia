@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+.dashboard-page {
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-header {
+  background: linear-gradient(to right, #7a0000, #c40000, #7a0000);
+  color: white;
+  padding: 24px;
+  text-align: center;
+}
+
+.dashboard-header h1 {
+  margin: 0 0 8px;
+  font-size: 36px;
+}
+
+.dashboard-header p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.dashboard-main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 20px;
+}
+
+.dashboard-card {
+  width: 100%;
+  max-width: 500px;
+  background-color: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+.dashboard-card h2 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: #222;
+}
+
+.dashboard-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.dashboard-buttons button {
+  min-width: 180px;
+  height: 44px;
+  border: none;
+  border-radius: 8px;
+  background-color: #c40000;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.dashboard-buttons button:hover {
+  background-color: #970000;
+}
+.reloj-widget {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 220px;
+  background-color: #a30000;
+  border: 1px solid #3a0000;
+  color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  padding: 16px;
+  text-align: center;
+}
+
+.reloj-widget h2 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.reloj-hora {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 8px 0;
+}
+
+.reloj-fecha {
+  font-size: 14px;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.4;
+  text-transform: capitalize;
+}

@@ -1,0 +1,228 @@
+.page-container {
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  padding: 30px;
+  position: relative;
+}
+
+.page-container::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("/tnl-logo.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 480px;
+  opacity: 0.12;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.page-container > * {
+  position: relative;
+  z-index: 1;
+}
+
+.back-menu-button {
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 8px;
+  background-color: #c40000;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.reloj-widget {
+  background-color: white;
+  width: 100%;
+  max-width: 530px;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+  padding: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.reloj-widget h2 {
+  margin-bottom: 15px;
+  font-size: 26px;
+}
+
+.reloj-hora {
+  font-size: 40px;
+  font-weight: bold;
+  color: #b30000;
+}
+
+.reloj-fecha {
+  font-size: 18px;
+  color: #444;
+  text-transform: capitalize;
+}
+
+.parte-card {
+  margin-top: 30px;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 700px;
+}
+
+.parte-titulo-mes {
+  margin-bottom: 15px;
+}
+
+.calendario-semana {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.calendario-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+
+.calendario-dia {
+  height: 40px;
+  border: none;
+  background-color: #e6e6e6;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.calendario-dia:hover {
+  background-color: #c40000;
+  color: white;
+}
+
+.dia-seleccionado {
+  background-color: #c40000;
+  color: white;
+}
+
+.calendario-vacio {
+  height: 40px;
+}
+.dia-con-parte {
+  background-color: #2ecc71;
+  color: white;
+}
+.fichaje-card {
+  max-width: 520px;
+  margin: 80px auto;
+  background: white;
+  border-radius: 18px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+  border-top: 8px solid #b00000;
+}
+
+.fichaje-icono {
+  font-size: 4rem;
+  margin-bottom: 15px;
+}
+
+.fichaje-card h1 {
+  color: #b00000;
+  margin-bottom: 10px;
+}
+
+.fichaje-texto {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.fichaje-info {
+  margin: 30px 0;
+  padding: 20px;
+  background: #f4f4f6;
+  border-radius: 12px;
+}
+
+.fichaje-info strong {
+  display: block;
+  font-size: 2rem;
+  color: #b00000;
+}
+
+.fichaje-info span {
+  display: block;
+  margin-top: 8px;
+  color: #555;
+  text-transform: capitalize;
+}
+
+.menu-button-page {
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 8px;
+  background-color: #c40000;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.menu-button-page:hover {
+  background-color: #970000;
+}
+
+.save-button {
+  display: block;
+  width: 100%;
+  margin-top: 24px;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: #c40000;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.save-button:hover {
+  background-color: #970000;
+}
+
+.parte-form-card {
+  margin-top: 30px;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 700px;
+}
+
+.parte-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.parte-formulario textarea {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.mensaje-guardado {
+  margin-top: 16px;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #eafbea;
+  color: #2e7d32;
+  font-weight: 600;
+  text-align: center;
+}

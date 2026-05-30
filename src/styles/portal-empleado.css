@@ -1,0 +1,31 @@
+.portal-page {
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  padding: 40px;
+}
+
+.portal-title {
+  margin-bottom: 20px;
+}
+
+.portal-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.portal-buttons button {
+  min-width: 180px;
+  height: 45px;
+  border: none;
+  border-radius: 8px;
+  background-color: #c40000;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.portal-buttons button:hover {
+  background-color: #970000;
+}
