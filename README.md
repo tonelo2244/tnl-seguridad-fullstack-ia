@@ -92,3 +92,24 @@ Los módulos de incidencias, rondas y documentación se encuentran preparados pa
 ## Autor
 
 Antonio González
+## Capturas de pantalla
+
+### Login
+
+![Login](screenshots/login.png)
+
+### Dashboard principal
+
+![Dashboard](screenshots/dashboard.png)
+
+### Portal del empleado con IA
+
+![Portal Empleado](screenshots/portal-empleado.png)
+
+### Registro de entrada
+
+![Entrada](screenshots/entrada.png)
+
+### Registro de salida
+
+![Salida](screenshots/salida.png)
